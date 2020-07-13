@@ -1,0 +1,31 @@
+@import "footer", "header", "mixins", "variables", "media";
+
+body {
+    // box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.paralax {
+    background-image: url("https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content1, .content2 {
+    
+    background-color: #c52850;
+    font-size: 20px;
+    padding-top: 100px;
+}
+.content1 {
+    height: 500px;
+}
+.content2 {
+    height: 1000px;
+}
