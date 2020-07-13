@@ -1,14 +1,16 @@
 @import  "mixins", "variables";
 
 header {
-    position: fixed;
+    // position: fixed;
     left: 0;
     right: 0;
     display: flex;
-    border-bottom: 5px solid rgb(153, 153, 153);
+    border-bottom: 5px solid $navBgHover;
     justify-content: space-between;
-    padding: 0 3em;
+    padding: 1em 3em;
     flex-direction: row;
+    background-color: $navBgc;
+    
 }
 nav {
     
@@ -23,6 +25,7 @@ nav {
         margin: 0 ;
         padding: 0;
         transition: ease 1.5s all;
+        
 
         li{
             display: inline-block;
@@ -35,16 +38,19 @@ nav {
                 display: inline-block;
                 color: rgb(243, 239, 239);
                 text-decoration: none;
-                padding: 0.5em 1em;
+                padding: 0.5em 2em;
                 opacity: 0.3;
+                
                 
 
             }
             a:hover {
                 color: $navTextColor;
-                background: cornsilk;
-                transition: ease-out;
+                background: $navBgHover;
+                transition: ease-out 0.5s all;
                 opacity: 1;
+                border-radius: 5px;
+                transform: scale(1.1);
             }
         }
     }
@@ -59,7 +65,7 @@ nav {
                 height: 2px;
                 width: 20px;
                 margin: 2px;
-                background-color: #888;
+                background-color: rgb(243, 239, 239);
             }
     }
 }
@@ -72,7 +78,7 @@ nav {
   }
   
   .logo{
-    padding-bottom: 0.5em;
+    padding: 0.5em;
     span {
         display: block;
         margin-right: 10px;
@@ -85,6 +91,7 @@ nav {
         animation: rotate 2.6s linear infinite;
     }
     
+    
     span:nth-of-type(2) {
         animation-delay: 0.3s;
     }
@@ -94,16 +101,10 @@ nav {
     span:nth-of-type(4) {
         animation-delay: 0.9s;
     }
-    //   span:nth-of-type(5) {
-    //     animation-delay: 1.2s;
-    //   }
-    //   span:nth-of-type(6) {
-    //     animation-delay: 1.5s;
-    //   }
-    //   span:nth-of-type(7) {
-    //     animation-delay: 1.8s;
-    //   }
-    
+       span:nth-of-type(5) {
+         animation-delay: 1.2s;
+       }
+        
     @keyframes rotate {
         35% {
         transform: rotateX(360deg);
@@ -112,4 +113,16 @@ nav {
         transform: rotateX(360deg);
         }
     } 
+}
+.logo:hover {
+                
+                // background: $navBgHover;
+                transition: ease-out 0.8s all;
+                border-radius: 5px;
+                transform: scale(1.4);
+                span{
+                    color: $navTextColor;   
+                    font-weight: bold;
+
+                }
 }

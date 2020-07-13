@@ -1,4 +1,7 @@
-@media (max-width: 670px) {
+@import  "mixins", "variables";
+
+
+@media (max-width: 850px) {
     nav {
         
         width: 100vw;
@@ -14,7 +17,7 @@
             right: 0;
             top: 100%;
             flex-direction: column;
-            background: azure;
+            background: $navBgc;
             margin-top: 0;
         }
         
@@ -29,7 +32,7 @@
         min-height: 168px;
         right: 0;
         margin-left: 0%;
-        background: azure;
+        background: $navBgc;
     }
             
            
@@ -40,7 +43,10 @@
     } 
     nav ul.active li a {
         display: block;
-        color: black;
+        transform: scale(1);
+        border-radius: 0;
+        opacity: 0.8;
+    
     } 
     header {
         flex-direction: column;

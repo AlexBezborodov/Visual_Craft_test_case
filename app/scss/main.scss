@@ -1,22 +1,88 @@
 @import "footer", "header", "mixins", "variables", "media";
 
-body {
-    // box-sizing: border-box; 
+body, p, h1, a {
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
+}
+.container {
+    min-width: 400px;
+    max-width: 1920px;
+    margin: 0 auto;
+    
 }
 a {
     text-decoration: none;
 }
 .paralax {
-    background-image: url("https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?cs=srgb&dl=apple-ipad-iphone-iphone-6-4158.jpg&fm=jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+.Presentation{
+    background: url("https://images.pexels.com/photos/1010496/pexels-photo-1010496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: contain;
+    min-height: 500px;
+    color: azure;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: center;
+    }
+    
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 4em;
+        letter-spacing: 10px;
+        width: 90%;
+    }
+    p{
+        padding: 1em  0 0.5em 0;
+        font-size: 1.5em;
+        border-bottom: 5px solid $navBgHover;
+        min-width: 150px;
+        margin-bottom: 2em;
+        width: 70%;
+    }
+    
+}
+.btn {
+    @include button-style;
+    border-color: $navBgHover;
+    color: $navBgHover;
+    margin: 2em  auto 1em;
+    opacity: 0.5;
+}
+.btn:hover {
+    border-color: $navBgHover;
+    background: $navBgHover;
+    transition: ease-in 0.8s all;
+    opacity: 1;
+    color: azure;
+    transform: scale(0.4);
 }
 
+
+.text {
+     padding: 5em;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 500px;
+}
 .content1, .content2 {
     
     background-color: #c52850;
