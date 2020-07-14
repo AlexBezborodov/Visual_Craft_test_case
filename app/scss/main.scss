@@ -75,8 +75,43 @@ a {
     color: azure;
     transform: scale(0.4);
 }
+.about-container {
+    width: 80%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
+}
+.chip-item {
+    width: 135px;
+    height: 154px;
+    background-color: grey;
+    margin: 1em;
+    display: flex;
+     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    &:hover {
+    border-color: $navBgHover;
+    background: $navBgHover;
+    transition: ease-in 0.8s all;
+    img{
+        transform: scale(1.1);
+        transition: ease-in 0.8s all;
+    }
+    }
+}
 
-
+.about-content {
+    border: 1px solid green;
+    flex-direction: column;
+    img {
+        margin-top: 3em;
+    }
+}
+// --delete this--
 .text {
      padding: 5em;
     box-sizing: border-box;
@@ -95,3 +130,4 @@ a {
 .content2 {
     height: 1000px;
 }
+// --delete this--
