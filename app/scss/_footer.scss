@@ -1,2 +1,29 @@
 @import  "mixins", "variables";
 
+footer {
+    height: 120px;
+    background: $navBgc;
+    border-top: 5px solid $navBgHover;
+}
+.footer-menu {
+    flex-wrap: wrap;
+    a {
+     padding: 5px 10px;
+     color: azure;
+     }
+     
+    }
+.footer-menu a:hover {
+    color:azure;
+    border: 1px solid $navBgHover;
+    background: $navBgHover;
+    transition: ease-in 0.5s all;
+    border-radius: 2px;
+}    
+
+
+.socials{
+    a{
+        padding: 10px;
+    }    
+}

@@ -7,7 +7,7 @@ header {
     display: flex;
     border-bottom: 5px solid $navBgHover;
     justify-content: space-between;
-    padding: 1em 3em;
+    padding: 1em 2em;
     flex-direction: row;
     background-color: $navBgc;
     
@@ -38,7 +38,7 @@ nav {
                 display: inline-block;
                 color: rgb(243, 239, 239);
                 text-decoration: none;
-                padding: 0.5em 2em;
+                padding: 0.5em 0.5em;
                 opacity: 0.3;
                 
                 
