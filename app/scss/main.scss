@@ -1,9 +1,10 @@
-@import "footer", "header", "mixins", "variables", "media";
+@import "footer", "header", "mixins", "variables", "media", "portfolio";
 
 body, p, h1, a {
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
+    
 }
 .container {
     min-width: 400px;
@@ -23,6 +24,7 @@ a {
     background-size: cover;
 
 }
+// --PRESENTATION STYLES--
 .Presentation{
     background: url("https://images.pexels.com/photos/1010496/pexels-photo-1010496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-size: contain;
@@ -75,9 +77,10 @@ a {
     color: azure;
     transform: scale(0.4);
 }
+// --PRESENTATION STYLES ENDS--
+
+// --ABOUT STYLES--
 .about-container {
-    width: 80%;
-    border: 1px solid red;
     margin: 0 auto;
 }
 .chips {
@@ -85,14 +88,16 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     margin: 1em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
 }
 .chip-item {
     width: 135px;
     height: 154px;
-    background-color: grey;
-    margin: 1em;
+    background: linear-gradient(to right, #626769 50%, #a2a8ac 50%);
+    margin: 3em;
     display: flex;
-     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     &:hover {
     border-color: $navBgHover;
     background: $navBgHover;
@@ -105,12 +110,95 @@ a {
 }
 
 .about-content {
-    border: 1px solid green;
     flex-direction: column;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    margin: 1em;
+    padding-bottom: 2em;
+    border-radius: 10px;
     img {
         margin-top: 3em;
     }
+    h2 {
+        font-family: SegoeWPN;
+        font-size: 38.7px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #4f4f4f;
+        border-bottom: 2px solid #4f4f4f;
+    }
+    p {
+        font-family: UniversCE;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #818181;
+        width: 50%;
+        padding: 2em 0;
+    }
 }
+// --ABOUT STYLES ENDS--
+// --FORM STYLES--
+.form-container{
+    background-color: #17171885;
+    height: 380px;
+    padding: 2em;
+    border-radius: 10px;
+    
+    // opacity: 0.8;
+    
+}
+.stay-form {
+    margin: auto;
+    max-width: 566px;
+    padding:0 5px 5px;
+    input, textarea {
+        width: 95%;
+        padding: 1em;
+        
+    }
+}
+.input-text-style {
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid $navBgHover;
+    color: $navBgHover;
+    border-radius: 2px;
+    outline: none;
+}
+.input-text-style:focus {
+    border: 2px solid $navBgc;
+    color: $navBgc;
+    background-color: rgba(134, 134, 134, 0.664);
+}
+.textarea-input {
+    height: 100px;
+     resize: none;
+}
+
+.button {
+    @include button-style ;
+    border: 1px solid $navBgc;
+    width: 5em; 
+    margin: 0 auto;
+    text-align: center;
+    a{
+        color: $navBgc;
+    }
+    &:hover {     
+        background: $navBgHover;
+        transition: ease-out 0.9s all;
+        opacity: 1;
+        border-radius: 5px;
+        transform: scale(1.1);
+        a {
+            color: azure;    
+        }    
+    }
+    
+}
+// --FORM STYLES--
 // --delete this--
 .text {
      padding: 5em;
