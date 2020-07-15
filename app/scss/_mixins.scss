@@ -10,3 +10,15 @@
     
 
 }
+
+@mixin title {
+        font-family: SegoeWPN;
+        font-size: 2.2em;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #4f4f4f;
+        border-bottom: 2px solid #4f4f4f;
+        padding: 1em;
+        width: 50%;
+        text-align: center;
+}

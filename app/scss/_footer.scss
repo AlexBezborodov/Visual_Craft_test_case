@@ -23,7 +23,34 @@ footer {
 
 
 .socials{
+    
     a{
         padding: 10px;
-    }    
+        border: 1px solid transparent;
+        margin: 0 0.3em;
+    }  
+    img {
+        width: 12px;
+        height: 12px;
+    }  
+}
+.social-facebook:hover {
+    background-color: #3b5998;
+    transition: 0.3s;
+    border: 1px solid #3b5998;
+}
+.social-google:hover {
+    background-color: #dd4b39;
+    transition: 0.3s;
+    border: 1px solid #dd4b39;
+}
+.social-twitter:hover {
+    background-color: #55acee;
+    transition: 0.3s;
+    border: 1px solid #55acee;
+}
+.social-linked-in:hover {
+    background-color: #0976b4;
+    transition: 0.3s;
+    border: 1px solid #0976b4;
 }

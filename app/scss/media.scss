@@ -29,7 +29,7 @@
     }
     nav ul.active {
         opacity: 1;
-        min-height: 168px;
+        min-height: 235px;
         right: 0;
         margin-left: 0%;
         background: $navBgc;
@@ -108,5 +108,16 @@
             width: 50%;
             height: auto;
         }
+    }
+}
+
+@media (max-width: 1030px) {
+    .choose-container {
+        display: flex;
+        flex-direction: column;
+        margin: 5em 0;
+    }
+    img {
+        width: 90%;
     }
 }

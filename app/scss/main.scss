@@ -101,12 +101,15 @@ a {
     margin: 3em;
     display: flex;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    img{
+        width: 50%;
+    }
     &:hover {
     border-color: $navBgHover;
     background: $navBgHover;
     transition: ease-in 0.8s all;
     img{
-        transform: scale(1.1);
+        transform: scale(1.2);
         transition: ease-in 0.8s all;
     }
     }
@@ -118,17 +121,13 @@ a {
     margin: 1em;
     padding-bottom: 2em;
     border-radius: 10px;
+
     img {
-        margin-top: 3em;
+        margin-top: 10em;
     }
     h2 {
-        font-family: SegoeWPN;
-        font-size: 38.7px;
-        line-height: 1.2;
-        font-weight: 300;
-        color: #4f4f4f;
-        border-bottom: 2px solid #4f4f4f;
-    }
+        @include title
+        }
     p {
         font-family: UniversCE;
         font-size: 14px;
@@ -142,12 +141,18 @@ a {
 // --ABOUT STYLES ENDS--
 // --FORM STYLES--
 .form-container{
+    margin: 4em 0;
     background-color: #17171885;
-    height: 380px;
+    height: 500px;
     padding: 2em;
     border-radius: 10px;
-    
-    // opacity: 0.8;
+    h2{
+        @include title;
+        color: azure;
+        margin: 0 auto;
+        border-bottom-color: transparent;
+        width: 80%;
+    }
     
 }
 .stay-form {
@@ -201,25 +206,121 @@ a {
     }
     
 }
-// --FORM STYLES--
-
-// --delete this--
-.text {
-     padding: 5em;
-    box-sizing: border-box;
-    height: auto;
-    min-height: 500px;
-}
-.content1, .content2 {
+// --FORM STYLES ENDS--
+// --TEAM STYLES --
+.team-section {
+    min-width: 320px;
+    max-width: 1370px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: 1em;
     
-    background-color: #c52850;
-    font-size: 20px;
-    padding-top: 100px;
+    min-height: 400px;
+    
 }
-.content1 {
-    height: 500px;
+.team-member {
+    flex-direction: column; 
+    border-radius: 20px;
+    background-color: rgba(11, 73, 114, 0.555);
+    width: 250px;
+    padding: 2em;
+    margin: 1em 1em;
+    
+    img {
+        width: 180px;
+        height: 180px;
+        border-radius: 20px;
+        border: 5px solid $navBgHover;
+        &:hover{
+            transform: scale(1.2);
+            transition: ease-out 0.7s all;
+        }
+    }
+    h2 {
+        color: azure;
+        flex-wrap: wrap;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+    p {
+        border-top: 2px solid azure;
+        padding-top: 1em;
+        color: azure;
+        text-align: center;
+    }
+
 }
-.content2 {
-    height: 1000px;
+.team-member:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    transition: ease-out 0.5s all;
+
 }
-// --delete this--
+
+// --TEAM STYLES ENDS--
+// --WHY CHOOSE US STYLES--
+.choose-section {
+    background-color: #fff;
+    height: auto;
+    margin: 2em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    min-height: 500px;
+    flex-direction: column;
+    h2{
+        @include title;
+    }
+}
+
+
+.list {
+        margin: 0 1em;
+        opacity: 0;
+            &:hover {
+            opacity: 1;
+            transition: ease-out 0.8s all;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            }
+    ul {
+        margin: 2em 15px;
+        padding: 1em;
+        li {
+            list-style: none;
+            padding: 0.5em 1em;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #818181;  
+            margin: 0 auto; 
+        }
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+.container-hidden-text {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center ;
+    &:hover{
+        background-image: url("data:image/svg+xml;utf8,
+  <svg xmlns='http://www.w3.org/2000/svg' version='1.1'
+       height='180px' width='180px'>
+    <text x='25' y='25' fill='white' font-size='22'>Tap here</text>
+  </svg>");
+   
+    }
+    background-image: url("data:image/svg+xml;utf8,
+  <svg xmlns='http://www.w3.org/2000/svg' version='1.1'
+       height='120px' width='180px'> 
+    <text x='45' y='65' fill='grey' font-size='22'>To point here</text>
+  </svg>");
+
+ }
+ 
+ 
+// --WHY CHOOSE US STYLES END--

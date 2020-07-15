@@ -25,8 +25,8 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About Us</a></li>
                 <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Question Form</a></li>
+                <li><a href="#Team">Our Team</a></li>
+                <li><a href="#Form">Question Form</a></li>
             </ul>
             <div class="mobile-bar" onClick="toggleMobileMenu();">
                 <span></span>
@@ -101,7 +101,7 @@
     <div class="portfolio-section">
         <a name="Portfolio"></a>
             <div class="portfolio-header">
-                <h2>
+                <h2 align="center">
                     PORTFOLIO
                 </h2>
                 <p>
@@ -217,47 +217,155 @@
             <!--POPUPS ENDS-->
         </div>
 <!-- --PORTFOLIO SECTION ENDS--  -->    
-    <div class="paralax"></div> 
-    <div class="content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error aliquam similique quod sequi quibusdam.</div>  
+<!-- --TEAM SECTION --  -->
+    <a name="Team"></a>    
+    <div class="paralax flex">
+        
+        <div class="team-section">
+            <div class="team-member flex">
+                <img src="./img/messi.jpeg" alt="">
+                <h2>LEO MESSI</h2>
+                <p class="about">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Doloremque, 
+                    cumque. Accusantium sapiente rerum aperiam inventore 
+                    perspiciatis officia quas, numquam vero corrupti quam 
+                    ea iusto, neque totam 
+                    laborum magnam quos doloremque odit. Iste sunt quos sapiente.</p>
+            </div>
+
+            <div class="team-member flex">
+                <img src="./img/CR7.jpg" alt="">
+                <h2>CRISTIANO RONALDO</h2>
+                <p class="about">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Doloremque, 
+                    cumque. Accusantium sapiente rerum aperiam inventore 
+                    perspiciatis officia quas, numquam vero corrupti quam 
+                    ea iusto, neque totam 
+                    laborum magnam quos doloremque odit. Iste sunt quos sapiente.</p>
+            </div>
+
+            <div class="team-member flex">
+                <img src="./img/lukash.jpg" alt="">
+                <h2>A.Lukashenko</h2>
+                <p class="about">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Doloremque, 
+                    cumque. Accusantium sapiente rerum aperiam inventore 
+                    perspiciatis officia quas, numquam vero corrupti quam 
+                    ea iusto, neque totam 
+                    laborum magnam quos doloremque odit. Iste sunt quos sapiente.</p>
+            </div>
+
+            <div class="team-member flex">
+                <img src="./img/kuch.jpg" alt="">
+                <h2>L. Kuchma</h2>
+                <p class="about">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Doloremque, 
+                    cumque. Accusantium sapiente rerum aperiam inventore 
+                    perspiciatis officia quas, numquam vero corrupti quam 
+                    ea iusto, neque totam 
+                    laborum magnam quos doloremque odit. Iste sunt quos sapiente.</p>
+            </div>
+
+            <div class="team-member flex">
+                <img src="./img/jusch.gif" alt="Jon Dou">
+                <h2>V. Juschenko</h2>
+                <p class="about">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Doloremque, 
+                    cumque. Accusantium sapiente rerum aperiam inventore 
+                    perspiciatis officia quas, numquam vero corrupti quam 
+                    ea iusto, neque totam 
+                    laborum magnam quos doloremque odit. Iste sunt quos sapiente.</p>
+            </div>
+        </div>
+    </div> 
+<!-- --TEAM SECTION ENDS--  -->    
+<!-- --WHY CHOOSE US SECTION --  -->    
+    <div class="choose-section flex">
+        <h2>Why choose us?</h2>    
+        <div class="flex choose-container">
+            
+            <img src="./img/browser.png" alt="browser">
+            <div class="container-hidden-text">
+                <div class="list">
+                    <ul>
+                        <li><img src="./img/check.png" alt="">  Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li><img src="./img/check.png" alt="">  Tempore aliquam impedit alias cumque cupiditate explicabo!</li>
+                        <li><img src="./img/check.png" alt="">  Corporis, inventore nostrum. Et nulla dicta cumque.</li>
+                        <li><img src="./img/check.png" alt="">  Voluptatibus non consequuntur officia tempore blanditiis. Id.</li>
+                        <li><img src="./img/check.png" alt="">  A et officiis magni quis suscipit nobis.</li>
+                        <li><img src="./img/check.png" alt="">  Dolorum asperiores tenetur repellendus totam fuga quae.</li>
+                        <li><img src="./img/check.png" alt="">  Autem incidunt repellendus eos odit cum dolorem.</li>
+                        <li><img src="./img/check.png" alt="">  Corporis incidunt odit eum error tenetur saepe.</li>
+                    </ul>  
+                </div>
+            </div>
+                
+        </div>
+        
+    </div>  
+<!-- --WHY CHOOSE US SECTION ENDS --  -->    
     <div class="paralax flex">
         <div class="form-container ">
-            <form class="stay-form">
+            <h2>Have any questions?</h2>
+            <a name="Form"></a>
+            <form class="stay-form" name="FormQuestion">
                 <label for="input-name" hidden>
                     Full name
                 </label>
-                <input type="text" placeholder="Full Name" name="full-name" class="input-text-style" id="input-name">
+                <input type="text" placeholder="Full Name" name="fullName" class="input-text-style" id="input-name">
                 <label for="Email" hidden>
                     Email
                 </label>
-                <input type="email" id="Email" placeholder="Email Address" name="email" class="input-text-style">
+                <input type="email" id="Email" placeholder="Email Address" name="Email" class="input-text-style">
                 <label for="textarea-input" hidden>
                     Message
                 </label>
                 <textarea name="Message" id="textarea-input" class="input-text-style textarea-input" placeholder="Message"></textarea>
             </form>
-            <div class="button flex"><a  href="#" onClick=SendInfo();>SEND</a></div>
+            <div class="button flex" onclick="SendInfo();"> <a>SEND</a></div>
         </div>
     </div>
+    <footer class="flex">
+        <div class="logo">
+            <span >Created by ABE/~ 2020</span>
+        </div>
+         
+        <div class="footer-menu flex">
+                <a href="#Home">Home</a>
+                <a href="#About">About Us</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Team">Our Team</a>
+                <a href="#Form">Question Form</a>
+        </div>
+        <div class="socials flex">
+            <a 
+               class="social-facebook" 
+               href="https://www.facebook.com/"
+            >
+                <img src="./img/facebook-ico.png" alt="Facebook">
+            </a>
+            <a
+               class="social-google" 
+               href="https://myaccount.google.com/"
+            >
+                <img src="./img/google-ico.png" alt="Google+">
+            </a>
+            <a 
+               class="social-twitter" 
+               href="https://twitter.com/explore"
+            >
+                <img src="./img/twitter-ico.png" alt="Twitter">
+            </a>
+            <a 
+               class="social-linked-in" 
+               href="https://www.linkedin.com/home"
+            >
+                <img src="./img/in-ico.png" alt="LinkedIn">
+            </a>  
+        </div>
+        </footer>   
+        
 </div> 
-<footer class="flex">
-<div class="logo">
-    <span >Created by ABE/~ 2020</span>
-</div>
- 
-<div class="footer-menu flex">
-        <a href="#Home">Home</a>
-        <a href="#About">About Us</a>
-        <a href="#Portfolio">Portfolio</a>
-        <a href="#">Our Team</a>
-        <a href="#">Question Form</a>
-</div>
-<div class="socials flex">
-    <a href=""><img src="./img/facebook-ico.png" alt="Facebook"></a>
-    <a href=""><img src="./img/google-ico.png" alt="Google+"></a>
-    <a href=""><img src="./img/twitter-ico.png" alt="Twitter"></a>
-    <a href=""><img src="./img/in-ico.png" alt="LinkedIn"></a>  
-</div>
-</footer>   
 </body>
 <script src="./js/index.js"></script>
 </html>

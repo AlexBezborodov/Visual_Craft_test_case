@@ -12,10 +12,12 @@
     margin: auto;
     text-align: center;
     h2 {
+    @include title;
     padding: 10px;
     color: #2d3950;
     font-size: 41px;
     font-weight: 400;
+    margin: 0 auto;
     }
     p {
     padding: 10px;
