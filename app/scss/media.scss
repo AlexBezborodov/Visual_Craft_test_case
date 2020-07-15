@@ -121,4 +121,8 @@
         width: 90%;
     }
 }
-
+@media (max-width: 420px) {
+    .socials a {
+        margin: 0 4px 0 0;
+    }
+}
