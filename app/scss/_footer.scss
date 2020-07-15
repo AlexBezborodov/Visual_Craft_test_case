@@ -23,6 +23,8 @@ footer {
 
 
 .socials{
+    display: flex;
+    flex-wrap: wrap;
     
     a{
         padding: 10px;
